@@ -1,7 +1,7 @@
 <template>
     <el-row :gutter="20" style="{height:120px;}">
         <el-col :span="6" :offset="3" class="logo"><a href="#"><img src="../150597768652618.png" height="80px;"/></a></el-col>
-        <el-col :span="3" :offset="4" class="nav-item">
+        <el-col :span="3" :offset="2" class="nav-item">
             <el-input
                 placeholder="搜索博文"
                 icon="search">
@@ -66,7 +66,7 @@
         /*height:220px;*/
         top: -1px;
         border-top:1px #00FF00 solid;
-        border-bottom:1px #00FF00 solid;
+        border-bottom:2px #00FF00 solid;
         z-index:10;
         -webkit-animation: clipAni .2s infinite linear;
         animation-iteration-count:1;
@@ -77,7 +77,7 @@
          position: absolute;
          width:100%;
          height:1px;
-        border-top:1px #00FF00 solid;
+        border-top:2px #00FF00 solid;
         border-bottom:1px #00FF00 solid;
          /*width:220px;*/
          /*height:220px;*/
