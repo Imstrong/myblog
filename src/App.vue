@@ -1,16 +1,21 @@
 <template>
-    <el-row :gutter="20" style="{height:120px;}">
-        <el-col :span="6" :offset="3" class="logo"><a href="#"><img src="../150597768652618.png" height="80px;"/></a></el-col>
-        <el-col :span="3" :offset="2" class="nav-item">
-            <el-input
-                placeholder="搜索博文"
-                icon="search">
-            </el-input>
-        </el-col>
-        <el-col :span="2" class="nav-item"><router-link to="/file"><div class="bb">归档</div></router-link></el-col>
-        <el-col :span="2" class="nav-item"><router-link to="/timeline"><div class="bb">时间轴</div></router-link></el-col>
-        <el-col :span="2" class="nav-item"><router-link to="/about"><div class="bb">关于我</div></router-link></el-col>
-    </el-row>
+    <div>
+        <el-row :gutter="20" style="{height:120px;}">
+            <el-col :span="6" :offset="3" class="logo"><a href="#"><img src="../150597768652618.png" height="80px;"/></a></el-col>
+            <el-col :span="3" :offset="2" class="nav-item">
+                <el-input
+                    placeholder="搜索博文"
+                    icon="search">
+                </el-input>
+            </el-col>
+            <el-col :span="2" class="nav-item"><router-link to="/file"><div class="bb">归档</div></router-link></el-col>
+            <el-col :span="2" class="nav-item"><router-link to="/timeline"><div class="bb">时间轴</div></router-link></el-col>
+            <el-col :span="2" class="nav-item"><router-link to="/about"><div class="bb">关于我</div></router-link></el-col>
+        </el-row>
+        <div class="content">
+            <router-view></router-view>
+        </div>
+    </div>
 </template>
 <script>
     export default {
@@ -29,6 +34,11 @@
     }
 </script>
 <style>
+    .content{
+        margin:0 auto;
+        width:80%;
+        overflow:hidden;
+    }
     .nav-item{
         text-align:center;
         margin-top:50px;
