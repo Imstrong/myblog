@@ -1,7 +1,7 @@
 <template>
     <el-row :gutter="20" style="{height:120px;}">
         <el-col :span="6" :offset="3" class="logo"><a href="#"><img src="../150597768652618.png" height="80px;"/></a></el-col>
-        <el-col :span="3" :offset="4" class="nav-item">
+        <el-col :span="3" :offset="2" class="nav-item">
             <el-input
                 placeholder="搜索博文"
                 icon="search">
