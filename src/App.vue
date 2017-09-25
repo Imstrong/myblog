@@ -31,8 +31,13 @@
 <style>
     .nav-item{
         text-align:center;
-        line-height:30px;
-        margin-top:40px;
+        margin-top:50px;
+        line-height:40px;
+    }
+    .logo a{
+        display:block;
+        height:120px;
+        padding-top:20px;
     }
     .bb{
         position: relative;
